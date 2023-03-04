@@ -1,0 +1,195 @@
+git a* {
+    font-style:inherit;
+    font-size: 20px;
+
+
+}
+header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+background-color: aquamarine;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+min-width: 300px;
+}
+li {
+    display:grid;
+}
+body {
+    display: block;
+    margin: 0;
+}
+.main-pic {
+    height: 700px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    
+    
+}
+h2 {
+    
+    font-size: 50px;
+    
+}
+.first, .second, .third {
+    
+    float: right;
+    text-align: right;
+    padding: 50px;
+    text-align: top;
+    border-right: 5px solid black;
+    flex-basis: 20%;
+   
+}
+.des1 {
+    flex-basis: 50%;
+    margin-left: 50px;
+    width:60%;
+    line-height: 30px;
+}
+
+
+.avatar {
+    width: 200px;
+}
+    
+    
+
+.work {
+    display: flex;
+}
+
+.first-project {
+    height: 500px;
+    width: 100%;
+    
+    background-image: url(https://images.businessnewsdaily.com/app/uploads/2022/04/04073619/how-ecommerce-works.png);
+   
+border: 5px solid greenyellow;
+
+
+}
+.fp, .sp, .tp {
+    width: 160px;
+    line-height: 5px;
+    margin: 0;
+    background-color: bisque;
+border: 2px solid royalblue;
+
+}
+h3 {
+    font-size: 25px;
+}
+
+
+    
+    
+
+.projects {
+    margin: 0;
+    display: flex;
+   flex-wrap: wrap;
+    flex-basis: 60%;
+   
+}
+.second-project {
+background-image:url(https://www.itu.int/itu-d/sites/statistics/wp-content/uploads/sites/11/2021/03/ICTprices.jpg);
+
+}
+.third-project {
+    background-image:url(https://fscl01.fonpit.de/userfiles/7687254/image/NextPit_Apps-w1400h1050.jpg);
+    
+    
+}
+.second-project, .third-project {
+    height: 350px;
+    width: 100%;
+    flex-basis: 42%;
+    border: 5px solid greenyellow;    
+}
+
+
+
+.contact {
+display: flex;
+margin-top: 10px;
+align-items: center;
+}
+.des2 {
+   
+    
+    text-decoration: underline;
+    margin-left: 50px;
+   
+}
+footer {
+    justify-content: center;
+    display: flex;
+    background-color: deepskyblue;
+    color:aliceblue;
+    padding: 2px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutme, .contact  {
+        display: block;
+        text-align: center;
+    }
+    .first, .third, .second {
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+/*@media only screen and (max-width: 768px) {
+    .second-project, .third-project  {
+flex-direction: column;
+flex-basis: 100%;
+
+
+    }
+    .first-project {
+        flex-wrap:wrap;
+        flex-basis: 100%;
+            }
+            .main-pic {
+                width: 100%;
+                flex-wrap: wrap;
+                flex-basis: 100%;
+            }
+} */
+@media only screen and (max-width: 768px) {
+    .work {
+        flex-wrap:wrap;
+    }
+    .second-project, .second, .third-project, header, nav ul {
+       flex-direction: column;
+       flex-basis: 100%;
+       justify-content: center;
+      .main-pic{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      } 
+       /* justify-content: center;
+        flex-basis: 100%;
+        flex-direction: column;
+        width: 100%;
+    }
