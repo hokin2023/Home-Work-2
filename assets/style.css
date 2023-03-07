@@ -87,7 +87,8 @@ h2 {
    
 border: 5px solid greenyellow;
 padding: 5%;
-margin-bottom: 5%;
+margin-bottom: 2%;
+flex-basis: 100%;
 
 
 }
@@ -120,18 +121,34 @@ h3 {
 background-image:url(https://www.itu.int/itu-d/sites/statistics/wp-content/uploads/sites/11/2021/03/ICTprices.jpg);
 
 }
+.Fourth-project {
+background-image: url(https://thumbs.dreamstime.com/b/internet-information-technology-businessman-hand-showing-concept-75784736.jpg);
+
+}
+.Fifth-project{
+    background-image: url(https://www.ldatschool.ca/wp-content/uploads/2017/07/shutterstock_230363287-1024x1024.jpg);
+    margin-left: 2%;
+}
 .third-project {
     background-image:url(https://fscl01.fonpit.de/userfiles/7687254/image/NextPit_Apps-w1400h1050.jpg);
-    margin-left: 5%;
+    margin-left: 2%;
     
 }
 .second-project, .third-project {
     height: 350px;
     width: 100%;
-    flex-basis: 46%;
+    flex-basis: 48%;
     border: 5px solid greenyellow;    
     padding-bottom: 5%;
+    margin-bottom: 2%;
     
+}
+.Fourth-project, .Fifth-project {
+    height: 350px;
+    width: 100%;
+    flex-basis: 48%;
+    border: 5px solid greenyellow;    
+    padding-bottom: 5%;
 }
 
 a:hover {
@@ -191,11 +208,13 @@ footer {
 @media only screen and (max-width: 768px) {
     #work {
         flex-wrap:wrap;
+    
     }
-    .second-project, .second, .third-project, header, nav ul {
+    .second-project, .second, .third-project, header, nav ul, .Fourth-project, .Fifth-project {
        flex-direction: column;
        flex-basis: 100%;
        justify-content: center;
+       padding: 5%;
        
     }
       .main-pic {
@@ -207,7 +226,7 @@ footer {
         padding: 0;
         min-width: 0;
     }
-.third-project {
+.Fifth-project, .third-project {
 margin-top: 20px;
 margin-left: 0;
 }
@@ -216,5 +235,14 @@ margin-left: 0;
             margin-top: 20px;
            
         }
+
+    .third {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .first-project {
+        height: 350px;
+    
+    }
       } 
        
