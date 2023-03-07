@@ -1,6 +1,9 @@
-git a* {
+* {
     font-style:inherit;
     font-size: 20px;
+    padding: 0;
+    margin: 0;
+
 
 
 }
@@ -8,7 +11,7 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 1%;
+    padding: 2%;
 background-color: aquamarine;
 }
 nav ul {
@@ -33,11 +36,11 @@ body {
     margin: 0;
 }
 
-.aboutme {
+#aboutme {
     display: flex;
     align-items: center; 
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     
     
     
@@ -71,8 +74,9 @@ h2 {
     
     
 
-.work {
+#work {
     display: flex;
+    margin-bottom: 3%;
 }
 
 .first-project {
@@ -82,12 +86,14 @@ h2 {
     background-image: url(https://images.businessnewsdaily.com/app/uploads/2022/04/04073619/how-ecommerce-works.png);
    
 border: 5px solid greenyellow;
+padding: 5%;
+margin-bottom: 5%;
 
 
 }
 .fp, .sp, .tp {
     width: 160px;
-    line-height: 5px;
+    line-height: 30px;
     margin: 0;
     background-color: bisque;
 border: 2px solid royalblue;
@@ -102,10 +108,12 @@ h3 {
     
 
 .projects {
-    margin: 0;
+    margin-bottom: 0%;
     display: flex;
    flex-wrap: wrap;
     flex-basis: 60%;
+    margin-left: 50px;
+    padding: 0%;
    
 }
 .second-project {
@@ -114,82 +122,99 @@ background-image:url(https://www.itu.int/itu-d/sites/statistics/wp-content/uploa
 }
 .third-project {
     background-image:url(https://fscl01.fonpit.de/userfiles/7687254/image/NextPit_Apps-w1400h1050.jpg);
-    
+    margin-left: 5%;
     
 }
 .second-project, .third-project {
     height: 350px;
     width: 100%;
-    flex-basis: 42%;
+    flex-basis: 46%;
     border: 5px solid greenyellow;    
+    padding-bottom: 5%;
+    
 }
 
+a:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
 
-
-.contact {
+#contact {
 display: flex;
 margin-top: 10px;
 align-items: center;
+margin-bottom: 10px;
 }
 .des2 {
+  
    
     
-    text-decoration: underline;
     margin-left: 50px;
    
+}
+.gh {
+    text-decoration: underline;
+    color: black;
+    
+}
+h4 {
+    padding: 5%;
 }
 footer {
     justify-content: center;
     display: flex;
     background-color: deepskyblue;
     color:aliceblue;
-    padding: 2px;
+    padding: 30px;
 
 }
 
 @media only screen and (max-width: 768px) {
-    .aboutme, .contact  {
+    #aboutme, #contact  {
         display: block;
         text-align: center;
+        margin: 30px;
+        padding: 20px;
     }
     .first, .third, .second {
         width: 100%;
         text-align: center;
-        
+        border-right: none;
+        justify-content: center;
+        padding: 10px;
+    }
+    * {
+        font-size: 17px;
     }
 }
-/*@media only screen and (max-width: 768px) {
-    .second-project, .third-project  {
-flex-direction: column;
-flex-basis: 100%;
 
-
-    }
-    .first-project {
-        flex-wrap:wrap;
-        flex-basis: 100%;
-            }
-            .main-pic {
-                width: 100%;
-                flex-wrap: wrap;
-                flex-basis: 100%;
-            }
-} */
 @media only screen and (max-width: 768px) {
-    .work {
+    #work {
         flex-wrap:wrap;
     }
     .second-project, .second, .third-project, header, nav ul {
        flex-direction: column;
        flex-basis: 100%;
        justify-content: center;
-      .main-pic{
+       
+    }
+      .main-pic {
         display: flex;
         flex-direction: column;
         width: 100%;
-      } 
-       /* justify-content: center;
-        flex-basis: 100%;
-        flex-direction: column;
-        width: 100%;
+      }
+    .Navigation, ul li {
+        padding: 0;
+        min-width: 0;
     }
+.third-project {
+margin-top: 20px;
+margin-left: 0;
+}
+        nav li {
+            padding: 5%;
+            margin-top: 20px;
+           
+        }
+      } 
+       
