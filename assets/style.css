@@ -27,10 +27,10 @@ body {
     margin: 0;
 }
 .main-pic {
-    height: 700px;
+    height: 900px;
     width: 100%;
     margin-bottom: 20px;
-    background-image: url(https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png);
+    background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -154,6 +154,7 @@ background-image: url(https://thumbs.dreamstime.com/b/internet-information-techn
 a:hover {
     filter: brightness(50%);
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 #contact {
