@@ -3,34 +3,56 @@
     font-size: 20px;
     padding: 0;
     margin: 0;
+    font-family: 'Lobster', cursive;
 
 
 
 }
-header {
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+  .nav-wrapper {
+	background-color:black;
+    margin: auto;
+    
+}
+
+#nav-mobile {
+    margin-right: 5px;
+}
+
+.brand-logo {
+    margin-left: 20px;
+}
+/* header {
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 2%;
 background-color: aquamarine;
-}
-nav ul {
+} */
+/* nav ul {
     display: flex;
     justify-content: space-between;
 min-width: 300px;
-}
-li {
+} */
+/* li {
     display:grid;
-}
+} */
 body {
     display: block;
     margin: 0;
 }
 .main-pic {
-    height: 900px;
+    height: 720px;
     width: 100%;
     margin-bottom: 20px;
-    background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+    background: url('mika-baumeister-Y_LgXwQEx2c-unsplash.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -80,14 +102,9 @@ h2 {
 }
 
 .first-project {
-    height: 500px;
-    width: 100%;
     
-    background-image: url(https://images.businessnewsdaily.com/app/uploads/2022/04/04073619/how-ecommerce-works.png);
-   
-border: 5px solid greenyellow;
-padding: 5%;
-margin-bottom: 2%;
+    width: 100%;
+
 flex-basis: 100%;
 
 
@@ -105,7 +122,9 @@ h3 {
 }
 
 
-    
+.third-pic {
+max-height: 245px;
+} 
     
 
 .projects {
@@ -114,14 +133,14 @@ h3 {
    flex-wrap: wrap;
     flex-basis: 60%;
     margin-left: 50px;
-    padding: 0%;
+    padding: 2%;
    
 }
-.second-project {
+/* .second-project {
 background-image:url(https://www.itu.int/itu-d/sites/statistics/wp-content/uploads/sites/11/2021/03/ICTprices.jpg);
 
-}
-.Fourth-project {
+} */
+/* .Fourth-project {
 background-image: url(https://thumbs.dreamstime.com/b/internet-information-technology-businessman-hand-showing-concept-75784736.jpg);
 
 }
@@ -133,23 +152,23 @@ background-image: url(https://thumbs.dreamstime.com/b/internet-information-techn
     background-image:url(https://fscl01.fonpit.de/userfiles/7687254/image/NextPit_Apps-w1400h1050.jpg);
     margin-left: 2%;
     
-}
+} */
 .second-project, .third-project {
-    height: 350px;
+    height: 400px;
     width: 100%;
-    flex-basis: 48%;
-    border: 5px solid greenyellow;    
-    padding-bottom: 5%;
-    margin-bottom: 2%;
+    flex-basis: 50%;   
+    padding: 20px;
     
 }
-.Fourth-project, .Fifth-project {
+
+
+/* .Fourth-project, .Fifth-project {
     height: 350px;
     width: 100%;
     flex-basis: 48%;
     border: 5px solid greenyellow;    
     padding-bottom: 5%;
-}
+} */
 
 a:hover {
     filter: brightness(50%);
@@ -184,6 +203,7 @@ footer {
     background-color: deepskyblue;
     color:aliceblue;
     padding: 30px;
+    text-align: center;
 
 }
 

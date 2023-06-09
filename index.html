@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Work 2</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 </head>
+
 <body>
     <header>
-        <h1>Kin Ho</h1>       
-    <nav>
+        <!-- <li>Kin Ho</li>        -->
+        <!-- <nav>
         <ul class="Navigation">
+            <li>Kin Ho</li>
         <li>
             <a href="#aboutme">About Me</a>
         </li>
@@ -22,30 +30,51 @@
             <a href= "#contact">Contact</a>
         </li>
     </ul>
-</nav>
+</nav> -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Kin Ho</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#aboutme">About me<span class="material-symbols-outlined">
+                        person
+                        </span></a></li>
+                    <li><a href="#work">Work<span class="material-symbols-outlined">
+                        work
+                        </span></a></li>
+                    <li><a href="#contact">Contact<span class="material-symbols-outlined">
+                        contacts
+                        </span></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main> 
-        <figure class="main-pic">
-        </figure>
+    <main>
+        <div class="main-pic">
+        </div>
+
         <article id="aboutme">
-<section class="first">
-            <h2>About Me</h2>
-        </section>
-        <section class="des1">
-<p>I went to Cal Poly Pomona and graduated with a bachelor degree in Finance. Right after graduation, I worked in a financial institution and I realized it's not the industry I want to pursure in a long run. Eventually, I found my passion in coding and decided to take coding bootcamp at UCLA with the hope to become software engineer.</p>
+            <section class="first">
+                <h2>About Me</h2>
+            </section>
+            <section class="des1">
+                <p>I went to Cal Poly Pomona and graduated with a bachelor degree in Finance. Right after graduation, I
+                    worked in a financial institution and I realized it's not the industry I want to pursure in a long
+                    run. Eventually, I found my passion in coding and decided to take coding bootcamp at UCLA with the
+                    hope to become software engineer.</p>
 
-</section>
-<figure>
-    <img class="avatar" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/332551053_172794648870017_7718810273018240678_n.jpg?stp=dst-jpg_s206x206&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=cu1ut7b3zNcAX9ZReXq&_nc_oc=AQnCSCEZuyEhHzQvrO-ikU4EdKSRJWUonHKwdRWGTYRetWrKp-n1MiIrO_eJa_mZASL2RcrQw768ULkRr8kpz4zH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSDMME5Pe7wdAie_a3Ftd7M3Eu-flht3TcMGlR9JAfGkg&oe=64277646">
-</figure>        
-</article>
+            </section>
+            <!-- <figure>
+                <img class="avatar"
+                    src="https://scontent.xx.fbcdn.net/v/t1.15752-9/332551053_172794648870017_7718810273018240678_n.jpg?stp=dst-jpg_s206x206&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=cu1ut7b3zNcAX9ZReXq&_nc_oc=AQnCSCEZuyEhHzQvrO-ikU4EdKSRJWUonHKwdRWGTYRetWrKp-n1MiIrO_eJa_mZASL2RcrQw768ULkRr8kpz4zH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSDMME5Pe7wdAie_a3Ftd7M3Eu-flht3TcMGlR9JAfGkg&oe=64277646">
+            </figure> -->
+        </article>
 
-<article id="work">
-    <section class="second">
-    <h2>Work</h2>
-    </section>
-    <div class="projects">
-    <a class="first-project" href="https://vlad1slav86.github.io/Pear-Music/" target="_new">
+        <article id="work">
+            <section class="second">
+                <h2>Work</h2>
+            </section>
+            <div class="projects">
+            <!-- <a class="first-project" href="https://vlad1slav86.github.io/Pear-Music/" target="_new">
         <section class="fp">
     
         <h3>Pear Music</h3>
@@ -53,6 +82,7 @@
         <p>See report</p>
         
     </section>
+    
 </a>
     
     <a class="second-project" href="https://findine.herokuapp.com/" target="_new">
@@ -86,15 +116,86 @@
     </h3>
     <p>See report</p>
 </section>
-</a>
+</a> -->
+            <div class="card first-project">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/project1.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Pear Music<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="https://vlad1slav86.github.io/Pear-Music/" target="_new">Click here to see project</a>
+                    </p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Description<i
+                            class="material-icons right">close</i></span>
+                    
+                            <p>- An app built with Javascript, HTML, and CSS that allow users to search for musics based on categories.</p>
+                            <p>- Two server-side APIs were used to look for music genres and photos associated with results.</p>
+                    <p>- Client-side storage to store data when users add musics to their playlist.</p>
+                    <p>- My role was to work on the APIs and protect them safely.</p>
+                    <p>- Teamwork is a key when it comes to building an APP, and learning is a part of success to this industry.</p>
+                </div>       
 
-</div>
-</article>
+            </div>
+
+            
+            <div class="card second-project">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./assets/project2.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">FINDine<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="https://findine.herokuapp.com/" target="_new">Click here to see project</a>
+                    </p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Description<i
+                            class="material-icons right">close</i></span>
+                    <p>- A full stack development app built with Javascript that allow users to search for restaurants based on Zip code and City.</p>
+                    <p>- Used Node.js and Express.js to create RESTful API.</p>
+                    <p>- Used MySQL and the Sequelize ORM for the database.</p>
+                    <p>- Had both GET and POST routes for retrieving and adding new data.</p>
+                    <p>- Deployed using Heroku.</p>
+                    <p>- Materialized CSS was used to decorate website.</p>
+                    <p>- Encoded API pictures from google to protect API keys.</p>
+                </div>       
+
+            </div>
+
+            <div class="card third-project">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator third-pic" src="./assets/project3.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Coming soon<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="" target="_new">Click here to see project</a>
+                    </p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Description<i
+                            class="material-icons right">close</i></span>
+                    <p>- A full stack development app built with React will be coming soon by end of July.</p>
+                </div>       
+
+            </div>
+            
+
+
+            </div>
+
+
+
+
+        </article>
         </article>
         <article id="contact">
-<section class="third">
-            <h2>Contact</h2>
-        </section>
+            <section class="third">
+                <h2>Contact</h2>
+            </section>
             <section class="des2">
                 <a href="https://github.com/hokin2023">
                     <h4 class="gh">Git Hub </h4>
@@ -102,12 +203,13 @@
                 <h4>6264665671</h4>
                 <h4>hokin990@gmail.com</h4>
             </section>
-        
+
         </article>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 <footer>
     <p>Thank You!</p>
 </footer>
-</html>
 
+</html>
