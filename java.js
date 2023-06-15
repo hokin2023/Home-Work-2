@@ -13,7 +13,8 @@ function toggleMode () {
     if (bodyElement.classList.contains('dark-mode')) {
         localStorage.setItem('mode', 'dark');
         darkModeBtn.textContent= 'Turn on Light Mode';
-    //    Array.from(cardDescription).style.color = "black";
+        darkModeBtn.style.backgroundColor = "white";
+
        for (var i = 0; i < cardDescription.length; i++) {
         cardDescription[i].style.color = "black";
        }
@@ -21,6 +22,7 @@ function toggleMode () {
     } else {
         localStorage.setItem('mode', 'light');
         darkModeBtn.textContent= 'Turn on Dark Mode';
+        darkModeBtn.style.backgroundColor = "white";
     }
 }
 
