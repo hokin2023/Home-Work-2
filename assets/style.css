@@ -8,6 +8,15 @@
 
 
 }
+
+.dark-mode {
+    background-color:#616161;
+    color: white;
+}
+
+/* article {
+    background-color: white;
+} */
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
