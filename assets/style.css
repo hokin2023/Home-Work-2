@@ -222,7 +222,8 @@ footer {
         text-align: center;
         margin: auto;
         padding: auto   ;
-        width: 120%;
+        width: 100%;
+        margin-left: 10px;
     }
    
     .first, .third, .second {
@@ -244,15 +245,19 @@ footer {
         margin-top: -20px;
     }
 
-    
+    p {
+        font-style: initial;
+        font-size: 20px;
+    }
     .projects {
         justify-content: center;
-        margin-left: 100px;
+        margin-left: 50px;
         margin-top: -20px;
     }
     .main-pic {
-        width: 400px;
+        width: 120%;
         height: 400px;
+        
     }
     .des2 {
         margin-right: 111px;
@@ -260,7 +265,7 @@ footer {
     }
     .sec-picture, .first-pic, .third-pic {
         height: 244.16px;
-        width: 312px;
+        
     }
     .second-project, .second, .third-project, header, nav ul, .Fourth-project, .Fifth-project {
        flex-direction: column;
