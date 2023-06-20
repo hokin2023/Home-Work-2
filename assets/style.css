@@ -95,7 +95,7 @@ h2 {
     flex-basis: 50%;
     margin-left: 50px;
     width:60%;
-    line-height: 30px;
+    line-height: 50px;
 }
 
 
@@ -217,18 +217,21 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    #aboutme, #contact  {
+    #aboutme, #contact, .bio  {
         display: block;
         text-align: center;
-        margin: 30px;
-        padding: 20px;
+        margin: auto;
+        padding: auto   ;
+        width: 120%;
     }
+   
     .first, .third, .second {
         width: 100%;
         text-align: center;
         border-right: none;
         justify-content: center;
         padding: 10px;
+        margin-right: 30px;
     }
     * {
         font-size: 17px;
@@ -238,13 +241,33 @@ footer {
 @media only screen and (max-width: 768px) {
     #work {
         flex-wrap:wrap;
+        margin-top: -20px;
+    }
+
     
+    .projects {
+        justify-content: center;
+        margin-left: 100px;
+        margin-top: -20px;
+    }
+    .main-pic {
+        width: 400px;
+        height: 400px;
+    }
+    .des2 {
+        margin-right: 111px;
+        margin-top: -30px;
+    }
+    .sec-picture, .first-pic, .third-pic {
+        height: 244.16px;
+        width: 312px;
     }
     .second-project, .second, .third-project, header, nav ul, .Fourth-project, .Fifth-project {
        flex-direction: column;
        flex-basis: 100%;
        justify-content: center;
        padding: 5%;
+       margin-left: 20px;
        
     }
       .main-pic {
