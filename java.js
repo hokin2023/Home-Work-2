@@ -2,7 +2,7 @@ var darkModeBtn = document.querySelector('.switch');
 var bodyElement = document.body;
 var containerElement = document.querySelector('main')
 var mode = localStorage.getItem('mode');
-var cardDescription = document.querySelectorAll('.card-reveal');
+var cardDescription = Array.from(document.querySelectorAll('.card-reveal'));
 // var cardDescription = Array.from.querySelector('.card-reveal')
 
 function toggleMode () {
@@ -15,9 +15,10 @@ function toggleMode () {
         darkModeBtn.textContent= 'Turn on Light Mode';
         darkModeBtn.style.backgroundColor = "white";
 
-       for (var i = 0; i < cardDescription.length; i++) {
-        cardDescription[i].style.color = "black";
-       }
+    //    for (var i = 0; i < cardDescription.length; i++) {
+    //     cardDescription[i].style.color = "black";
+    //    }
+cardDescription.forEach(name => name.style.color ="black");
 
     } else {
         localStorage.setItem('mode', 'light');
